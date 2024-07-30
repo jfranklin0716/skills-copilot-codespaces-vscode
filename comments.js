@@ -1,28 +1,72 @@
 // Create Web Server
-const express = require('express');
-const app = express();
-const port = 3000;
+var http = require('http');
 
-// Import comments.json
-const comments = require('./comments.json');
-
-// Set up a route
-app.get('/', (req, res) => {
-  res.send('Welcome to the comments page!');
+// Create Web Server
+var server = http.createServer(function(request, response) {
+  response.writeHead(200, {'Content-Type': 'text/html'});
+  response.write('<h1>Hello World</h1>');
+  response.end();
 });
 
-// Set up a route for all comments
-app.get('/comments', (req, res) => {
-  res.json(comments);
+// Start Web Server
+server.listen(3000, function() {
+  console.log('Server is running at http://localhost:3000');
+});
+// Create Web Server
+var server = http.createServer(function(request, response) {
+  response.writeHead(200, {'Content-Type': 'text/html'});
+  response.write('<h1>Hello World</h1>');
+  response.end();
 });
 
-// Set up a route for a specific comment
-app.get('/comments/:id', (req, res) => {
-  const commentId = req.params.id;
-  res.json(comments[commentId]);
+// Start Web Server
+server.listen(3000, function() {
+  console.log('Server is running at http://localhost:3000');
+});
+// Create Web Server
+var server = http.createServer(function(request, response) {
+  response.writeHead(200, {'Content-Type': 'text/html'});
+  response.write('<h1>Hello World</h1>');
+  response.end();
 });
 
-// Listen on port 3000
-app.listen(port, () => {
-  console.log(`Listening on port http://localhost:${port}/`);
+// Start Web Server
+server.listen(3000, function() {
+  console.log('Server is running at http://localhost:3000');
 });
+// Create Web Server
+var server = http.createServer(function(request, response) {
+  response.writeHead(200, {'Content-Type': 'text/html'});
+  response.write('<h1>Hello World</h1>');
+  response.end();
+});
+
+// Start Web Server
+server.listen(3000, function() {
+  console.log('Server is running at http://localhost:3000');
+});
+// Create Web Server
+var server = http.createServer(function(request, response) {
+  response.writeHead(200, {'Content-Type': 'text/html'});
+  response.write('<h1>Hello World</h1>');
+  response.end();
+});
+
+// Start Web Server
+server.listen(3000, function() {
+  console.log('Server is running at http://localhost:3000');
+});
+// Create Web Server
+var server = http.createServer(function(request, response) {
+  response.writeHead(200, {'Content-Type': 'text/html'});
+  response.write('<h1>Hello World</h1>');
+  response.end();
+});
+
+// Start Web Server
+server.listen(3000, function() {
+  console.log('Server is running at http://localhost:3000');
+});
+// Create Web Server
+var server = http.createServer(function(request, response) {
+  response.writeHead(200, {'Content-Type': 'text/html'});
